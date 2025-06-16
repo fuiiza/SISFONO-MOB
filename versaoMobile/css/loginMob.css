@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Estilos base (mobile-first) */
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 360px;
+  padding: 138px 15px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 85%;
+  margin-top: -90px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  color: #333;
+  text-shadow: 3px 1px 3px #ccc;
+  margin-bottom: 15px;
+}
+
+h1 span {
+  display: block;
+}
+
+hr {
+  border-top: 2px solid #1a9789;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  background-color: #ffffff;
+  color: #00695c;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 0;
+  margin: 25px auto;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  width: 85%;
+  max-width: 280px;
+}
+
+.button:hover {
+  background-color: #00796b;
+  color: #fff;
+}
+
+.button.secondary {
+  background-color: #ffffff;
+  color: #202020;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+.footer {
+  margin-top: 40px;
+  margin-bottom: -120px;
+  font-size: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Media Queries para ajustes em celulares maiores */
+@media only screen and (min-width: 360px) {
+  .container {
+    padding: 110px 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  .button {
+    font-size: 19px;
+    padding: 13px 0;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .logo {
+    max-width: 80%;
+    margin-top: -100px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  .button {
+    font-size: 20px;
+    padding: 14px 0;
+    width: 80%;
+  }
+}
+
+/* Apenas para telas muito grandes (acima de 600px - pode ser desktop) */
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 130px 30px;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+  
+  .button {
+    font-size: 21px;
+    padding: 15px 0;
+  }
+}
